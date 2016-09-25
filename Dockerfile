@@ -7,7 +7,7 @@ RUN apt-get update && apt-get install -y apache2
 
 # Configure localhost in Apache
 RUN echo "ServerName localhost" >> /etc/apache2/apache2.conf
-
+ 
 # Define default command
 CMD ["apachectl", "-D", "FOREGROUND"]
 
